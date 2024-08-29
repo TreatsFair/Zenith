@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+            <ul>
+              <li><a href="home.html" class="nav-icon">Home</a></li>
+              <li><a href="products.html" class="nav-icon">Products</a></li>
+              <li><a href="whatsnew.html" class="nav-icon">Whats New</a></li>
+            </ul>
+            <div class="logo-title">
+              <img src="images/apple_logo.png" alt="Apple Store" class="logo" />
+              <h3 class="title">Zenith</h3>
+            </div>
+            <div class="navlinks">
+              <input
+                type="text"
+                placeholder="Search Product"           
+                class="search-bar"
+              />
+              <button class="search-button">&#128269;</button>
+            </div>
+            <div class="navbar-right">
+              <div class="icon-cart">
+                <a href="#Cart" class="nav-icon icon-logo">
+                  <img
+                    src="images/shopping-bag.png"
+                    alt="shopping bag"
+                    class="icon"
+                  />
+                </a>
+                <span id="cart-count">0</span>
+              </div>
+              <a href="login\index.html" class="nav-icon icon-logo">
+                <img src="images/account_logo.png" alt="account" class="icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-container">
+        <h3 class="title"> Your Cart</h3>
+        <div class="cart-content">
+          <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-footer">
+          <button class="close-cart">Back</button>
+          <button class="checkout-button">Buy Now</button>
+        </div>
+      </div>
+
+
+    <main>    
+
+        <h2 class="prod-text">Latest Product</h2>
+        <div class="whatsnew-grid">
+          <div class="whatsnew-item">
+            <div class="image-container" data-mouse-down-at="0" data-prev-percentage="0">
+              <img src="images/ip-gray.webp" alt="ipadpro" draggable="false">
+              <img src="images/Apple-iPad-Pro-2024-Black-PNG.png" alt="Ipad pro side" draggable="false">
+              <img src="images/dual-ip.webp" alt="ipadpro" draggable="false">
+              <img src="images/draw-ip.webp" alt="ipadpro" draggable="false">
+              <img src="images/keybo-ip.webp" alt="ipadpro" draggable="false">
+              <img src="images/screen-ip.webp" alt="ipadpro" draggable="false">
+            </div> 
+            <h3 class="whatsnew-name">iPad Pro M4</h3>
+          </div>
+
+          <div class="whatsnew-item">
+            <div class="image-container" data-mouse-down-at="0" data-prev-percentage="0">
+              <img src="images/iPad_Air_M2.webp" alt="iPadairm2" draggable="false">
+              <img src="images/air-model.webp" alt="ipadaircompare" draggable="false">
+              <img src="images/ipad_air_top.webp" alt="ipadairtop" draggable="false">
+              <img src="images/air-key.webp" alt="apple_pencil" draggable="false">
+              <img src="images/air-color.webp" alt="color" draggable="false">
+              <img src="images/air-pen.webp" alt="apple_pencil" draggable="false">
+            </div>
+            <h3 class="whatsnew-name">Ipad Air M2</h3>
+          </div>
+
+          <div class="whatsnew-item">
+            <div class="image-container" data-mouse-down-at="0" data-prev-percentage="0">
+              <img src="images/Apple-Vision-PRO-PNG.png " alt="Apple Vision" draggable="false">
+              <img src="images/Apple-Vision-Pro.png " alt="Apple Vision" draggable="false">
+              <img src="images/apple-vision-side.jpg " alt="Apple Vision " draggable="false">
+              <img src="images/apple-vision-info.jpg " alt="Apple Vision " draggable="false">
+              <img src="images/apple-vision-case.jpg " alt="Apple Vision" draggable="false">
+              <img src="images/bottom-apv.jpg " alt="Apple Vision" draggable="false">
+            </div>
+            <h3 class="whatsnew-name"> Apple Vision Pro</h3> 
+          </div>
+        </div>
+
+        <script src="whatsnew.js"></script>
+        <script src="product.js"></script>
+    
+    </main>
+  </body>
+</html>

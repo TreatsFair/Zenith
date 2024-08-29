@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <ul>
+            <li><a href="home.html" class="nav-icon">Home</a></li>
+            <li><a href="products.html" class="nav-icon">Products</a></li>
+            <li><a href="whatsnew.html" class="nav-icon">Whats New</a></li>
+          </ul>
+          <div class="logo-title">
+            <img src="images/apple_logo.png" alt="Apple Store" class="logo" />
+            <h3 class="title">Zenith</h3>
+          </div>
+          <div class="navlinks">
+            <input
+              type="text"
+              placeholder="Search Product"           
+              class="search-bar"
+            />
+            <button class="search-button">&#128269;</button>
+          </div>
+          <div class="navbar-right">
+            <div class="icon-cart">
+              <a href="#Cart" class="nav-icon icon-logo">
+                <img
+                  src="images/shopping-bag.png"
+                  alt="shopping bag"
+                  class="icon"
+                />
+              </a>
+              <span id="cart-count">0</span>
+            </div>
+            <a href="login/index.html" class="nav-icon icon-logo">
+              <img src="images/account_logo.png" alt="account" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="cart-container">
+      <h3 class="title"> Your Cart</h3>
+      <div class="cart-content">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div class="cart-footer">
+        <button class="close-cart">Back</button>
+        <button class="checkout-button">Buy Now</button>
+      </div>
+    </div>
+ 
+
+    <main>
+      <div class="slideshow-container">
+        <div class="slideshows">
+          <div class="slideshow-items">
+            <div class="slideshow-texts">
+              <h2>Apple Vision Pro.</h2>
+              <p>
+                Seamlessly blends digital content with your physical space. <br>
+                The ultimate theater, wherever you are.
+              </p>
+              <a href="https://www.apple.com/apple-vision-pro/"> <button>Find Out More</button></a>
+              </div>
+            <img src="images/Apple-Vision-PRO-PNG.png" alt="Apple-Vision-Pro" class="slide-image">
+          </div>
+
+          <div class="slideshow-items">
+            <div class="slideshow-texts">
+              <h2>Apple Watch Ultra.</h2>
+              <p>
+                The most rugged and capable Apple Watch pushes the limits again. <br>
+                The brightest Apple display ever.
+              </p>
+              <a href="https://www.apple.com/my/apple-watch-ultra-2/"><button>Find Out More</button></a>
+              </div>
+            <img src="images/Apple-Watch-Ultra-2-Colors.png" alt="Apple-Watch-Ultra-2-Colors" class="slide-image">
+          </div>
+
+          <div class="slideshow-items">
+            <div class="slideshow-texts">
+              <h2>Apple Airpods Max.</h2>
+              <p>
+                A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. <br>
+                The ultimate personal listening experience is here.
+                <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore.-->
+              </p>
+              <a href="https://www.apple.com/my/airpods-max/"><button>Find Out More</button></a>
+              </div>
+            <img src="images/headphones.png" alt="headphones" class="slide-image">
+          </div>
+
+
+          <button class="prev" onclick="minusSlides(1)">&#10094;
+          <button class="next" onclick="plusSlides(1)">&#10095;
+
+        </div>  
+          <div class="carousel-indicators">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+      </div>
+
+
+      <div class="container">
+        <div class="recommended-products">
+          <h2 class="recommended-title">Recommended Products</h2>
+          <div class="product-container">
+            <div class="product-item">
+              <img
+                src="images/iphone_15_pro.png"
+                class="product-image"
+                alt="Apple iPhone 15 Pro"
+              />
+              <h4>iPhone 15 Pro</h4>
+              <p class="price-font">From RM 5,499</p>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+              <img src="images/headphones.png" alt="Airpods Max" class="product-image">
+              <h4>Airpods Max</h4>
+              <p class="price-font">From RM 2,499</p>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="images/Apple-iPad-Pro-2024-Black-PNG.png"
+                class="product-ipad-image"
+                alt="Apple iPad Pro"
+              />
+              <h4>iPad Pro</h4>
+              <p class="price-font">From RM 5,299</p>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="images/apple_watch_ultra.png"
+                class="product-image"
+                alt="Apple Watch Ultra"
+              />
+              <h4>Apple Watch Ultra</h4>
+              <p class="price-font">From RM 3,799</p>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="images/Macbook-Pro-M1-PNG.png"
+                class="product-image"
+                alt="Macbook Pro M3"
+              />
+              <h4>Macbook Pro M3</h4>
+              <p class="price-font">From RM 9,999</p>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="javascript.js"></script>
+  </body>
+</html>

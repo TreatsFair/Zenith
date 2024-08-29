@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="javascript.js" />
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <ul>
+            <li><a href="home.html" class="nav-icon">Home</a></li>
+            <li><a href="products.html" class="nav-icon">Products</a></li>
+            <li><a href="whatsnew.html" class="nav-icon">Whats New</a></li>
+          </ul>
+          <div class="logo-title">
+            <img src="images/apple_logo.png" alt="Apple Store" class="logo" />
+            <h3 class="title">Zenith</h3>
+          </div>
+          <div class="navlinks">
+            <input
+              type="text"
+              placeholder="Search Product"           
+              class="search-bar"
+            />
+            <button class="search-button">&#128269;</button>
+          </div>
+          <div class="navbar-right">
+            <div class="icon-cart">
+              <a href="#Cart" class="nav-icon icon-logo">
+                <img
+                  src="images/shopping-bag.png"
+                  alt="shopping bag"
+                  class="icon"
+                />
+              </a>
+              <span id="cart-count">0</span>
+            </div>
+            <a href="login\index.html" class="nav-icon icon-logo">
+              <img src="images/account_logo.png" alt="account" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <main>    
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-item">
+                    <a href="phone.html">
+                        <img src="images/phone.png" alt="phone">
+                        <span>Phone</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tablet.html">
+                        <img src="images/Tablet.png" alt="Tablet">
+                        <span>Tablet</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="computer.html">
+                        <img src="images/Computer.png" alt="Computer">
+                        <span>Computer</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="earphone.html">
+                        <img src="images/earphone.png" alt="Earphone">
+                        <span>Earphone</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="headphone.html">
+                        <img src="images/Headphone.png" alt="Headphone">
+                        <span>Headphone</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="watch.html">
+                        <img src="images/Watch.png" alt="Watch">
+                        <span>Watch</span>
+                    </a>
+                </li>
+                <!-- Add more list items for each nav element -->
+            </ul>
+        </nav>
+
+      
+        <div class="cart-container">
+          <h3 class="title"> Your Cart</h3>
+          <div class="cart-content">
+            <!-- Cart items will be dynamically inserted here -->
+          </div>
+          <div class="cart-footer">
+            <button class="close-cart">Back</button>
+            <button class="checkout-button">Buy Now</button>
+          </div>
+        </div>
+
+    <p class="prod-text">Watch</p>
+    <div class="product1-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="product1-item">
+          <img src="images/Ultra2.jpg" alt="Ultra2">
+          <h3 class="product1-name">Apple Watch Ultra 2</h3>
+          <p class="product1-price">RM3,799</p>
+          <button class="add-to-cart-button" type="submit">Add to Cart</button>
+      </div>
+      <div class="product1-item">
+          <img src="images/Series9.webp" alt="Series9">
+          <h3 class="product1-name">Apple Watch Series 9</h3>
+          <p class="product1-price">RM2,149</p>
+          <button class="add-to-cart-button" type="submit">Add to Cart</button>
+      </div>
+
+      <div class="product1-item">
+          <img src="images/SE.webp" alt="SE">
+          <h3 class="product1-name">Apple Watch SE</h3>
+          <p class="product1-price">RM1,449</p>
+          <button class="add-to-cart-button" type="submit">Add to Cart</button>
+      </div>
+    </div>
+    </main>
+    <script src="product.js"></script>
+  </body>
+</html>
+

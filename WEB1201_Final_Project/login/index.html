@@ -1,0 +1,56 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<title>Login Component</title>  
+<link rel="stylesheet" href="styles.css">    
+</head>    
+<body>
+  <header class="header">  
+    <div class="navbar">
+      <ul>
+        <li><a href="../home.html" class="nav-icon">Home</a></li>
+        <li><a href="../products.html" class="nav-icon">Products</a></li>
+        <li><a href="../whatsnew.html" class="nav-icon">Whats New</a></li>
+      </ul>
+      <div class="logo-title">
+        <img src="../images/apple_logo.png" alt="Apple Store" class="logo" />
+        <h3 class="title">Zenith</h3>
+      </div>
+      <div class="navlinks">
+        <input
+          type="text"
+          placeholder="Search Product"           
+          class="search-bar"
+        />
+        <button class="search-button">&#128269;</button>
+      </div>
+  </header>    
+<div class="login-container">    
+    <form id="loginForm" action="../home.html" method="post">   
+        <h2>Login</h2>    
+        <div class="form-group">    
+            <label for="username">Username:</label>    
+            <input type="text" id="username" name="username" required>    
+        </div>    
+        <div class="form-group">    
+            <label for="password">Password:</label>    
+            <input type="password" id="password" name="password" required>    
+        </div>  
+        <div class="form-controls">  
+          <label class="remember-me">  
+              <input type="checkbox"> Remember me  
+          </label>  
+          <a href="" class="forget-password-link">Forget Password?</a>  
+      </div>
+        <button type="submit">Login</button>    
+        <div class="signup-link">    
+            <a href="../signup/index.html">Don't have an account?</a>    
+        </div>    
+    </form>    
+</div>    
+    
+<script src="script.js"></script>    
+</body>    
+</html>

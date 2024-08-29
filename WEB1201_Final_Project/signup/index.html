@@ -1,0 +1,65 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Sign Up Page</title>  
+<link rel="stylesheet" href="styles.css">  
+</head>  
+<body>
+    <header class="header">  
+       
+        <div class="navbar">
+          <ul>
+            <li><a href="../home.html" class="nav-icon">Home</a></li>
+            <li><a href="../products.html" class="nav-icon">Products</a></li>
+            <li><a href="../whatsnew.html" class="nav-icon">Whats New</a></li>
+          </ul>
+          <div class="logo-title">
+            <img src="../images/apple_logo.png" alt="Apple Store" class="logo" />
+            <h3 class="title">Zenith</h3>
+          </div>
+          <div class="navlinks">
+            <input
+              type="text"
+              placeholder="Search Product"           
+              class="search-bar"
+            />
+            <button class="search-button">&#128269;</button>
+          </div>
+      </header>  
+  
+<div class="signup-container">  
+    <form id="signupForm">  
+        <h2>Sign Up</h2>  
+        <div class="form-group">  
+            <label for="username">Username:</label>  
+            <input type="text" id="username" name="username" required>  
+        </div>  
+        <div class="form-group">  
+            <label for="email">Email:</label>  
+            <input type="email" id="email" name="email" required>  
+        </div>  
+        <div class="form-group">  
+            <label for="password">Password:</label>  
+            <input type="password" id="password" name="password" required>  
+        </div>  
+        <div class="form-group">  
+            <label for="confirm-password">Confirm Password:</label>  
+            <input type="password" id="confirm-password" name="confirm-password" required>  
+            <p id="password-error" class="error" style="display:none;">Passwords do not match!</p>  
+        </div>  
+        <div class="checkbox">    
+            <label><input type="checkbox" name="terms"> I agree to the terms and conditions</label>    
+             
+        </div>    
+        <button type="submit">Sign Up</button>    
+    </form>  
+    <p id="success-message" class="success" style="display:none;">Registration successful! Redirecting...</p>    
+    <p id="error-message" class="error" style="display:none;">Please fill out all fields!</p>
+    <p id="password-complexity-error" class="error" style="display:none;">Password must be at least 8 characters long and include at least one lowercase letter, one uppercase letter, one number, and one special character.</p>   
+</div>  
+  
+<script src="script.js"></script>  
+</body>  
+</html>
