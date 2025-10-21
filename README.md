@@ -1,4 +1,4 @@
-# Zenith 🍏
+# Zenith 
 **Zenith** is a modern, responsive e-commerce website, inspired by the design of Apple’s official site, Zenith showcases premium Apple products such as the **iPhone**, **Apple Watch**, and **AirPods**, combining elegant visuals with interactive web features built using **HTML**, **CSS** and **JavaScript**. The website provides an intuitive shopping experience where users can browse featured products, adjust quantities and simulate purchases through real-time updates and alerts.  
 
 ---
