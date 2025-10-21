@@ -36,7 +36,7 @@ All files run directly in your browser.
 1. Clone the repository:
    ```bash
    git clone https://github.com/TreatsFair/Zenith.git
-   cd Zenith
+   cd WEB1201_Final_Project
 2. Open the main file in your browser:
    ``` 
    home.html
